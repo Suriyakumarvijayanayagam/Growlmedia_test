@@ -195,6 +195,44 @@
         gap: 12px;
       }
     }
+
+              
+          @media screen and (min-width: 1920px) and (max-width: 2559px) {
+            body {
+              zoom: 1.33; 
+            }
+          }
+
+
+          @media screen and (min-width: 2560px) and (max-width: 3071px) {
+            body {
+              zoom: 1.8; 
+            }
+          }
+
+
+          @media screen and (min-width: 3072px) and (max-width: 3839px) {
+            body {
+              zoom: 1.6; 
+            }
+          }
+
+          @media screen and (min-width: 3840px) {
+            body {
+              zoom: 2.75; 
+            }
+          }
+
+          @media screen and (min-width: 1024px) and (max-width: 1336px) {
+            body {
+              zoom: 0.80; 
+            }
+          }
+          @media screen and (min-width: 820px) and (max-width: 1180px) {
+            body {
+              zoom:0.58;
+          }
+          }
   </style>
   <title>Confirm Booking</title>
 </head>
@@ -316,7 +354,7 @@
 
   <script>
     (function() {
-      emailjs.init("0Hk6pYDtsb2FpXu4H");
+      emailjs.init("zX08khnpd30hUObD1");
     })();
 
     document.getElementById('bookingForm').addEventListener('submit', async function(e) {
@@ -330,8 +368,8 @@
         const form = new FormData(this);
         const data = Object.fromEntries(form.entries());
 
-        await emailjs.send("service_xev41ow", 
-                          "template_ui96fnr", {
+        await emailjs.send("service_54put6a", 
+                          "template_4p72a6g", {
           to_email: "abhinavgrowl25@gmail.com",
           booking_date: data.date,
           booking_time: data.time,
